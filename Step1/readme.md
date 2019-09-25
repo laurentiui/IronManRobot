@@ -11,5 +11,5 @@
 ##Step 1 
 
 1. use colors that you like for the first 2 lines
-1. add a new style for the 3rd line
+1. add a new style for the 3rd line (similar to how h1 style is defined at line 8)
 1. hide one of the 4th/5h line based on your preference (hint: font color and background color should be the same)
