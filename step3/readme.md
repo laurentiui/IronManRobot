@@ -7,9 +7,9 @@
 1. Change files in **student-work** until requests are met
     1. Practicly behave like a politician. Take my work, refine it a bit, then take credit of the ideea like it's your own
 
+## Same table, different approach
 
-## Step 1 
+## Step 2 - tables, bootstrap
 
-1. use colors that you like for the first 2 lines
-1. add a new style for the 3rd line (similar to how h1 style is defined at line 8)
-1. hide one of the 4th/5h line based on your preference (hint: font color and background color should be the same)
+1. add a new column to the table
+1. add a new row to the table

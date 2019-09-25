@@ -8,7 +8,7 @@
     1. Practicly behave like a politician. Take my work, refine it a bit, then take credit of the ideea like it's your own
 
 
-##Step 2 - tables
+## Step 2 - tables
 
 1. add a new column to the table
 1. add a new row to the table
