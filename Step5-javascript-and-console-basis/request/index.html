@@ -1,0 +1,108 @@
+<html>
+    <head>
+        <script>
+            function pleaseYellAtMe(){
+                alert('The force is weak! We need you!');
+            }
+            function pleaseYellAtMeConsole(){
+                console.log('The force is weak! We need you!');
+            }
+
+            function askPolitely(){
+                var response = confirm('Do you want to join the force?');
+                if (response == true){
+                    alert('You joined the force!');
+                }
+                else{
+                    alert('We did not want you anyway');
+                }
+            }
+            function askPolitelyConsole(){
+                var response = confirm('Do you want to join the force?');
+                if (response == true){
+                    console.log('You joined the force!');
+                }
+                else{
+                    console.log('We did not want you anyway');
+                }
+            }
+        </script>
+
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+
+        <style>
+            h1{
+                text-align: center;
+                font-size: 100px;
+                color: blue;
+            }
+            div.row{
+                margin-bottom: 10px;
+            }
+        </style>
+        
+    </head>
+
+    <body>
+
+        <!-- this div is added just so we have a space from top of the screen -->
+        <div id="div-spacer" style="margin-top: 200px;">
+            <!-- he he -->
+        </div>
+
+        <div class="container">
+
+            <div class="row" id="buttons-simple">
+                <div class="col-sm-4">
+                    Simple buttons - they are useless
+                </div>
+                <div class="col-sm-4">
+                    <button>Yell!</button>
+                </div>
+                <div class="col-sm-4">
+                    <button>Ask politely</button>
+                </div>
+            </div>
+
+            <div class="row" id="buttons-with-events">
+                <div class="col-sm-4">
+                    Buttons with events
+                </div>
+                <div class="col-sm-4">
+                    <button onclick="pleaseYellAtMe();">Yell!</button>
+                </div>
+                <div class="col-sm-4">
+                    <button onclick="askPolitely();">Ask politely</button>
+                </div>
+            </div>
+
+            <div class="row" id="buttons-styleish-with-events">
+                <div class="col-sm-4">
+                    Style-ish buttons with events
+                </div>
+                <div class="col-sm-4">
+                    <button type="button" class="btn btn-primary" onclick="pleaseYellAtMeConsole();">Yell!</button>
+                </div>
+                <div class="col-sm-4">
+                    <button type="button" class="btn btn-warning" onclick="askPolitelyConsole();">Ask politely</button>
+                </div>
+            </div>
+
+            <div class="row">
+                <div class="col-sm-12">
+                    <h1>
+                        The force is gone
+                        <br/>
+                        Fear for your life
+                    </h1>
+                </div>
+                
+            </div>
+        </div>
+
+        
+    </body>
+
+    <script type="text/javascript">
+    </script>
+</html>

@@ -12,7 +12,7 @@
 2. only one hero is present now, as we hope Ironman came to life
 
 
-## Step 2 - tables, bootstrap
+## Step 3 - tables, bootstrap
 
 1. add the 2nd and 3rd hero from step2
 1. add the new column form step2
