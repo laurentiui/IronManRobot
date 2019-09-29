@@ -8,8 +8,12 @@
     1. Practicly behave like a politician. Take my work, refine it a bit, then take credit of the ideea like it's your own
 
 ## Same table, different approach
+1. It's the same table as step2, only now done using a different approach (boostrap style)
+2. only one hero is present now, as we hope Ironman came to life
+
 
 ## Step 2 - tables, bootstrap
 
-1. add a new column to the table
-1. add a new row to the table
+1. add the 2nd and 3rd hero from step2
+1. add the new column form step2
+1. change header to be both bold AND italic (tip: check style section, google "font-style" )
