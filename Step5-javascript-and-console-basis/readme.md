@@ -28,3 +28,4 @@
     1. for both buttons make new events : pleaseYell[my padwan name], respectively askPolitely[my padwan name] that:
         1. display both **alert** and **console**
         1. log in console "DINAMO is the best team in the world!"
+        1. minor change
