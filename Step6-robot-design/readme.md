@@ -22,4 +22,5 @@
 1. Index-3-robot-design
     1. in html, *&nbsp;* si view as space (Non Breaking SPace). It is also viewed as *developer space*. When you see this is means it was put on purpose. Pretty much like Ironman put the glove, or how "cap" left his best friend for a girl
     1. Make the grid 6 columns * 5 rows instead of 4 * 4 as it is now. Assign proper texts to the now *fat ironman*. Each row must have the same *class*
-    1. Next step be prepared to make a 12 * 12 grid. Muhaha
+    1. Make the grid 12 columns * 10 rows
+1. Next step, we will make 100 * 100 grids! MUHAHA

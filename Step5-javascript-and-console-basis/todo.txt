@@ -1,0 +1,4 @@
+1. add helper shortcuts file
+    CTRL-K-C / CTRL-K-U
+    CRTL-RIGHT / CRTL_LEFT
+2. add needed code and extensions to readme (vscode, git, bat files for get/push) etc.
