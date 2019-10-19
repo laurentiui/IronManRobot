@@ -1,0 +1,144 @@
+<html>
+    <head>
+
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+        <script src="https://code.jquery.com/jquery-3.4.1.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
+
+        <style>
+            .spidy-height{
+                height: 100px;
+            }
+            td{
+                text-align: center;
+                vertical-align: middle;
+            }
+        </style>
+
+        <script>
+            function clearTable(){
+                var $table = $('#table-example');
+                $table.empty();
+            }
+            function appendNewRow(){
+                var $table = $('#table-example');
+
+                var $newTr = $('<tr>');
+                $table.append($newTr);
+
+                var $newTd = $('<td>');
+                $newTd.text('I AM NEWLY BORN! The force is ... kind of weak in me to be honest');
+                $newTr.append($newTd);
+            }
+            function appendNew1RowAnd2Columns(){
+                var $table = $('#table-example');
+
+                var $newTr = $('<tr>');
+                $table.append($newTr);
+
+                for(var indexColumns = 0; indexColumns < 2; indexColumns = indexColumns + 1){
+                    var $newTd = $('<td>');
+                    $newTd.text('I AM NEWLY BORN! The force is ... kind of weak in me to be honest');
+                    $newTr.append($newTd);
+                }
+            }
+            function appendNew2RowAnd5Columns(){
+                var $table = $('#table-example');
+
+                for(var indexRows = 0; indexRows < 2; indexRows++){
+                    var $newTr = $('<tr>');
+                    $table.append($newTr);
+
+                    for(var indexColumns = 0; indexColumns < 5; indexColumns++){
+                        var $newTd = $('<td>');
+                        $newTd.text('I AM NEWLY BORN! The force is ... kind of weak in me to be honest');
+                        $newTr.append($newTd);
+                    }
+                }
+            }
+            function appendNew2RowAnd5Columns2ndWay(){
+                var $table = $('#table-example');
+
+                var noRows = 2;
+                var noColumns = 5;
+
+                for(var indexRows = 0; indexRows < noRows; indexRows++){
+                    var $newTr = $('<tr>');
+                    $table.append($newTr);
+
+                    for(var indexColumns = 0; indexColumns < noColumns; indexColumns++){
+                        var $newTd = $('<td>');
+                        $newTd.text('I AM NEWLY BORN! The force is ... kind of weak in me to be honest');
+                        $newTr.append($newTd);
+                    }
+                }
+
+            }
+            function appendNewRowAndColumns(noRows, noColumns){
+                var $table = $('#table-example');
+
+                for(var indexRows = 0; indexRows < noRows; indexRows++){
+                    var $newTr = $('<tr>');
+                    $table.append($newTr);
+
+                    for(var indexColumns = 0; indexColumns < noColumns; indexColumns++){
+                        var $newTd = $('<td>');
+                        $newTd.text('I AM NEWLY BORN! The force is ... kind of weak in me to be honest');
+                        $newTr.append($newTd);
+                    }
+                }
+            }
+        </script>
+
+        
+    </head>
+
+    <body>
+
+        <div class="container">
+            <div class="row">
+                <div class="col-sm-4"><button class="btn btn-primary" onclick="clearTable()">Clear table</button></div>
+                <div class="col-sm-4"><button class="btn btn-primary" onclick="appendNewRow()">Append new row</button></div>
+                <div class="col-sm-4"><button class="btn btn-primary" onclick="appendNew1RowAnd2Columns()">Append one new row and with 2 columns</button></div>
+                
+            </div>
+            <div class="row" style="height: 10px;;">&nbsp;</div>
+
+            <div class="row">
+                <div class="col-sm-6"><button class="btn btn-warning" onclick="appendNew2RowAnd5Columns()">Append 2 new rows and with 5 columns each-1st way</button></div>
+                <div class="col-sm-6"><button class="btn btn-primary" onclick="appendNew2RowAnd5Columns2ndWay()">Append 2 new rows and with 5 columns each - 2nd way</button></div>
+            </div>
+            <div class="row" style="height: 10px;;">&nbsp;</div>
+
+            <div class="row">
+                <div class="col-sm-12"><button class="btn btn-warning" onclick="appendNewRowAndColumns(3, 7)">Append 3 new rows and with 7 columns each</button></div>
+            </div>
+            <div class="row">
+                <div class="col-sm-6">Append 42 new rows and with 73 columns each</button></div>
+            </div>
+        </div>
+
+        <br/><br/>
+
+        <table style="width: 100%;" border="1" id="table-example">
+            <tr>
+                <td>1 / 1</td>
+                <td>1 / 2</td>
+                <td>1 / 3</td>
+            </tr>
+            <tr class="spidy-height">
+                <td>2 / 1</td>
+                <td>2 / 2</td>
+                <td>2 / 3</td>
+            </tr>
+            <tr>
+                <td>3 / 1</td>
+                <td>3 / 2</td>
+                <td>3 / 3</td>
+            </tr>
+        </table>
+        
+    </body>
+
+    <script type="text/javascript">
+    </script>
+</html>

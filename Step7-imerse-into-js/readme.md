@@ -24,6 +24,14 @@
         1. Declare and append a new row to the table
         1. Declare and append a new column to the new row
     1. You may even click the 2 previous buttons in any order and see the results
-    1. Implement the 3rd button **The new button will add 2 rows and 3 columns** - and drink a hot chocolate in my honor for not making it a 10 X 20 request :)
+    1. Implement the 3rd button **Append new 2 rows and with 3 columns each** - and drink a hot chocolate in my honor for not making it a 10 X 20 request :)
+1. index2-very-large-tables
+    1. **Append one new row and with 2 columns**: Introducing the **for** instruction. Adviced be you, the google will you search to understand in better
+        1. One important thing to notice. In 99.(97)% programing languages index starts with 0, not 1. I know it's a leap for you, but better to do it as easrly as posiblle
+    1. **Append 2 new rows and with 5 columns each**: Introducing nesting **for** instructions. There is a **for** for rows and a **for** for columns. See what I just did with the **for** word just for the benefit of you ?
+        1. Also noticed we replaced **indexColumns = indexColumns + 1** with **indexColumns++** - it's a shortcut for incrementing by 1
+    1. **Append 3 new rows and with 7 columns each**: Introducing parameterizend functions. Instead of defining our noRows and noColumns directly in the function, we can pass the values as parameters to them
+        1. Use what you learned to implement the **Append 42 new rows and with 73 columns each**
+
 
 
