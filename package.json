@@ -1,0 +1,19 @@
+{
+  "name": "ironmanrobot",
+  "version": "1.0.0",
+  "description": "### Create new github account(can skipt if yoy already have one)",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/laurentiui/IronManRobot.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/laurentiui/IronManRobot/issues"
+  },
+  "homepage": "https://github.com/laurentiui/IronManRobot#readme"
+}
