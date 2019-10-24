@@ -4,6 +4,10 @@
   "description": "### Create new github account(can skipt if yoy already have one)",
   "main": "index.js",
   "scripts": {
+    "start": "start http://localhost:8080 && node server.js",
+    "startsimple": "node server.js",
+    "sr": "npm run startandrun",
+    "buildimage": "docker build -t laurentiui/node-web-app .",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {
@@ -15,5 +19,8 @@
   "bugs": {
     "url": "https://github.com/laurentiui/IronManRobot/issues"
   },
-  "homepage": "https://github.com/laurentiui/IronManRobot#readme"
+  "homepage": "https://github.com/laurentiui/IronManRobot#readme",
+  "dependencies": {
+    "express": "^4.16.1"
+  }
 }
