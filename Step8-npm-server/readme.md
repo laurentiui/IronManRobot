@@ -8,13 +8,14 @@
     1. Practicly behave like a politician. Take my work, refine it a bit, then take credit of the ideea like it's your own
 
 ## Step 8-npm-server
-1. In terminal run **npm install**
-1. in the terminal run **npm start**
-    1. Leave terminal open. Sometimes the server will throw an error and the error will be displayed here.
-    1. To restart the server
-        1. Press **Ctrl-C** (standard command for abort)
-        1. Press **y** when asked if sure
-        1. Run **npm start** again to start the server
-1. Install vash extension to VsCode
-    1. https://marketplace.visualstudio.com/items?itemName=mrmlnc.vscode-vash
-    1. Install Vash syntax (should be first option)
+1. We will setup our first server
+    1. Install **dotnet core** sdk
+        1. Link: https://dotnet.microsoft.com/download
+        1. Choose **Download .NET Core SDK**
+    1. Right-click **Step8-npm-server/student-work/webserver** -> "Open in terminal"
+        1. Type **dotnet run**
+            1. Check no error appeared in terminal. Otherwise, contact Spiderman !!!!!
+            1. Open https://localhost:5001 in chrome borser
+            1. You see the error **Your connection is not private**
+            1. We will not go into details here (short story: https is a secure connection witch requires a valid certicate to run. Our local server only provides a local and temporary certificate witch the chrome browser does not recognize)
+            1. Click **Advanced** -> **Proceed to localhost (unsafe)**
