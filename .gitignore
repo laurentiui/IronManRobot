@@ -1,1 +1,3 @@
 node_modules
+**/webserver/bin/debug
+**/webserver/obj
