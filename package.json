@@ -22,6 +22,6 @@
   "homepage": "https://github.com/laurentiui/IronManRobot#readme",
   "dependencies": {
     "express": "^4.16.1",
-    "vash": "^0.12.6"
+    "vash": "^0.12.9"
   }
 }

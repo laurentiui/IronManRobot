@@ -7,7 +7,7 @@
 1. Change files in **student-work** until requests are met
     1. Practicly behave like a politician. Take my work, refine it a bit, then take credit of the ideea like it's your own
 
-## Step 8-upload-files
+## Step 8-npm-server
 1. In terminal run **npm install**
 1. in the terminal run **npm start**
     1. Leave terminal open. Sometimes the server will throw an error and the error will be displayed here.

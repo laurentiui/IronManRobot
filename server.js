@@ -15,18 +15,10 @@ app.set("view engine","vash")
 
 app.get('/', (req, res) => {
 
-    //console.log(req);
-    //console.log(res);
-
-//   var content = fs.readFileSync('index.html');
-//   res.write(content);
-//   res.end();
-
-  //res.send('Hello world\n');
-
-  res.render('test/index2', { 
-      title: 'Vash Template Demo', 
-      content:'This is dummy paragraph.'
+  //res.render('Step8-npm-server/index', { 
+    res.render('index', { 
+      title: 'Thanos is the best', 
+      content:'Rest is peace ironman!'
     });
 
 });
