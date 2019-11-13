@@ -19,3 +19,11 @@
             1. You see the error **Your connection is not private**
             1. We will not go into details here (short story: https is a secure connection witch requires a valid certicate to run. Our local server only provides a local and temporary certificate witch the chrome browser does not recognize)
             1. Click **Advanced** -> **Proceed to localhost (unsafe)**
+    1. Because we are using an asp.net server, the files you are working on in diffrent folders now. They will be described in the steps
+    1. Check **Manage parts**
+        1. Corresponding file in project is - after you copied to student-work - **Step8-npm-server/student-work/webserver/Views/Robot/Manage.cshtml**
+        1. Play with "Detailed view / Simple view"
+            1. Open console and check the log there too
+        1. Explain why - alghout the class "whiteSpace" is not defined in the file the backgrounc color dissapears
+            1. Add the new class "whiteSpace" under the existing "space"
+        1. You have noticed a bug - YEEEEEEY, your first discovered bug !!!!! - in cells that have space, upon witching from "Detailed view" to "Simple view" and back. We will not correct this, as life is not always fare ! MUHAHA

@@ -28,90 +28,82 @@
         }
     </style>
 
-    <!-- <button type="button" class="btn btn-primary" data-toggle="button" aria-pressed="false" autocomplete="off">
-    Single toggle
-    </button> -->
-
-    <div>
-    <i class="fas fa-toggle-on"></i> mdea
+    <div id="actions">
+        <input type="radio" name="grid-type" value="grid" checked />&nbsp; Detailed view
+        &nbsp;&nbsp;&nbsp;
+        <input type="radio" name="grid-type" value="real" />&nbsp; Simple view
     </div>
-    <!-- <input type="checkbox" checked data-toggle="toggle" data-on="Grid display" data-off="Robot display" data-onstyle="success" data-offstyle="danger" data-width="300" /> -->
-
-    <!-- <div class="toggle-group">
-            <label class="btn btn-success toggle-on">Ready</label>
-            <label class="btn btn-danger active toggle-off">Not Ready</label>
-            <span class="toggle-handle btn btn-default"></span>
-    </div> -->
 
     <div class="container-fluid robot" style="width: 700px;">
         <div class="row">
-            <div class="col-sm-5 space">space (5 * 1)</div>
-            <div class="col-sm-2 component">Head (2*1)</div>
-            <div class="col-sm-5 space">space (5 * 1)</div>
+            <div class="col-sm-5 space">space <span>(5 * 1)</span></div>
+            <div class="col-sm-2 component">Head <span>(2*1)</span></div>
+            <div class="col-sm-5 space">space <span>(5 * 1)</<span></div>
         </div>
         <div class="row">
-            <div class="col-sm-12 space height-quarter">space (12 * 1)</div>
+            <div class="col-sm-12 space height-quarter">space <span>(12 * 1)</span></div>
         </div>
         <div class="row">
-            <div class="col-sm-2 component height-2">Left arm (2 * 2)</div>
-            <div class="col-sm-2 space height-4">space (2 * 4)</div>
+            <div class="col-sm-2 component height-2">Left arm <span>(2 * 2)</span></div>
+            <div class="col-sm-2 space height-4">space <span>(2 * 4)</span></div>
 
-            <div class="col-sm-4 component height-4">Torso (4 * 4)</div>
+            <div class="col-sm-4 component height-4">Torso <span>(4 * 4)</span></div>
 
-            <div class="col-sm-2 space height-4">space (2 * 4)</div>
-            <div class="col-sm-2 component height-2">Right arm (2 * 2)</div>
+            <div class="col-sm-2 space height-4">space <span>(2 * 4)</span></div>
+            <div class="col-sm-2 component height-2">Right arm <span>(2 * 2)</span></div>
 
         </div>
         <div class="row">
-            <div class="col-sm-12 space height-quarter">space (12 * 1)</div>
+            <div class="col-sm-12 space height-quarter">space <span>(12 * 1)</span></div>
         </div>
         <div class="row">
-            <div class="col-sm-2 space height-2">space (2 * 2)</div>
-            <div class="col-sm-2 component height-2">Left leg (2 * 2)</div>
+            <div class="col-sm-2 space height-2">space <span>(2 * 2)</span></div>
+            <div class="col-sm-2 component height-2">Left leg <span>(2 * 2)</span></div>
 
-            <div class="col-sm-4 space height-2">space (2 * 2)</div>
+            <div class="col-sm-4 space height-2">space <span>(4 * 2)</span></div>
 
-            <div class="col-sm-2 component height-2">right leg (2 * 2)</div>
-            <div class="col-sm-2 space height-2">space (2 * 2)</div>
+            <div class="col-sm-2 component height-2">right leg <span>(2 * 2)</span></div>
+            <div class="col-sm-2 space height-2">space <span>(2 * 2)</span></div>
 
         </div>
     </div>
 
-    <!-- <table class="table-manage">
-        <thead>
-            <tr>
-                <th></th>
-                <th></th>
-                <th></th>
-                <th></th>
-                <th></th>
-                <th></th>
-                <th></th>
-            </tr>
-        </thead>
-        <tbody>
-            <tr>
-                <td colspan="3" rowspan="1">3*1<br/>space</td>
-                <td colspan="1" rowspan="1">1*1<br/>Head</td>
-                <td colspan="3" rowspan="1">3*1<br/>space</td>
-            </tr>
-            <tr>
-                <td colspan="7" rowspan="1">7*1<br/>space</td>
-            </tr>
-            <tr>
-                <td colspan="7" rowspan="1">7*1<br/>space</td>
-            </tr>
-            <tr>
-                <td colspan="1" rowspan="2">1*2<br/>left arm</td>
-                <td colspan="1" rowspan="4">1*4<br/>space</td>
-                <td colspan="3" rowspan="4">3*4<br/>torso</td>
-                <td colspan="1" rowspan="4">1*4<br/>space</td>
-                <td colspan="1" rowspan="2">1*2<br/>right arm</td>
-            </tr>
-            <tr>
-                <td colspan="1" rowspan="2">1*2<br/>space</td>
-                <td colspan="1" rowspan="2">1*2<br/>space</td>
-            </tr>
-        </tbody>
-    </table> -->
-    
+<script type="text/javascript">
+    $(document).ready(() => {
+        
+        $('input[name="grid-type"]').click(() => {
+            var viewType = $('input[name="grid-type"]:checked').val();
+            console.log('view type', viewType);
+
+            changeViewType(viewType);
+        });
+
+    });
+
+    function changeViewType(viewType){
+        
+        console.log('change view type to', viewType);
+        
+        if (viewType == 'real' ){
+
+            //change all divs with class "space" to have class "whiteSpace" instead
+            $('.robot div.row div.space').removeClass('space').addClass('whiteSpace'); //check that 'whiteSpace' class does not exists
+
+            //remove grid definitions
+            $('.robot div.row div span').hide();
+            //remove "space" text
+            $('.robot div.row div.whiteSpace').text('');
+        }
+        else if (viewType == 'grid' ){
+            
+
+            //change all divs with class "space" to have class "whiteSpace" instead
+            $('.robot div.row div.whiteSpace').removeClass('whiteSpace').addClass('space');
+            
+            //remove grid definitions
+            $('.robot div.row div span').show();
+            //remove "space" text
+            $('.robot div.row div.space').text('space');
+        }
+    };
+</script>
