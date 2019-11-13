@@ -1,0 +1,114 @@
+﻿@{
+    ViewData["Title"] = "Manage";
+}
+
+    <style>
+        
+        .robot div.row div{
+            
+            border: 3px solid white;
+            height: 100px; /* must sync this with classes "height-2" and "height-4"*/
+            text-align: center;
+            font-size: 12px;
+        }
+        div.height-quarter{
+            height: 30px !important;
+        }
+        div.height-2{
+            height: 200px !important;
+        }
+        div.height-4{
+            height: 400px !important;
+        }
+        div.space{
+            background-color: lightgray;
+        }
+        div.component{
+            background-color: greenyellow;
+        }
+    </style>
+
+    <!-- <button type="button" class="btn btn-primary" data-toggle="button" aria-pressed="false" autocomplete="off">
+    Single toggle
+    </button> -->
+
+    <input type="checkbox" checked data-toggle="toggle" data-on="Grid display" data-off="Robot display" data-onstyle="success" data-offstyle="danger" data-width="300" />
+
+    <!-- <div class="toggle-group">
+            <label class="btn btn-success toggle-on">Ready</label>
+            <label class="btn btn-danger active toggle-off">Not Ready</label>
+            <span class="toggle-handle btn btn-default"></span>
+    </div> -->
+
+    <div class="container-fluid robot" style="width: 700px;">
+        <div class="row">
+            <div class="col-sm-5 space">space (5 * 1)</div>
+            <div class="col-sm-2 component">Head (2*1)</div>
+            <div class="col-sm-5 space">space (5 * 1)</div>
+        </div>
+        <div class="row">
+            <div class="col-sm-12 space height-quarter">space (12 * 1)</div>
+        </div>
+        <div class="row">
+            <div class="col-sm-2 component height-2">Left arm (2 * 2)</div>
+            <div class="col-sm-2 space height-4">space (2 * 4)</div>
+
+            <div class="col-sm-4 component height-4">Torso (4 * 4)</div>
+
+            <div class="col-sm-2 space height-4">space (2 * 4)</div>
+            <div class="col-sm-2 component height-2">Right arm (2 * 2)</div>
+
+        </div>
+        <div class="row">
+            <div class="col-sm-12 space height-quarter">space (12 * 1)</div>
+        </div>
+        <div class="row">
+            <div class="col-sm-2 space height-2">space (2 * 2)</div>
+            <div class="col-sm-2 component height-2">Left leg (2 * 2)</div>
+
+            <div class="col-sm-4 space height-2">space (2 * 2)</div>
+
+            <div class="col-sm-2 component height-2">right leg (2 * 2)</div>
+            <div class="col-sm-2 space height-2">space (2 * 2)</div>
+
+        </div>
+    </div>
+
+    <!-- <table class="table-manage">
+        <thead>
+            <tr>
+                <th></th>
+                <th></th>
+                <th></th>
+                <th></th>
+                <th></th>
+                <th></th>
+                <th></th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td colspan="3" rowspan="1">3*1<br/>space</td>
+                <td colspan="1" rowspan="1">1*1<br/>Head</td>
+                <td colspan="3" rowspan="1">3*1<br/>space</td>
+            </tr>
+            <tr>
+                <td colspan="7" rowspan="1">7*1<br/>space</td>
+            </tr>
+            <tr>
+                <td colspan="7" rowspan="1">7*1<br/>space</td>
+            </tr>
+            <tr>
+                <td colspan="1" rowspan="2">1*2<br/>left arm</td>
+                <td colspan="1" rowspan="4">1*4<br/>space</td>
+                <td colspan="3" rowspan="4">3*4<br/>torso</td>
+                <td colspan="1" rowspan="4">1*4<br/>space</td>
+                <td colspan="1" rowspan="2">1*2<br/>right arm</td>
+            </tr>
+            <tr>
+                <td colspan="1" rowspan="2">1*2<br/>space</td>
+                <td colspan="1" rowspan="2">1*2<br/>space</td>
+            </tr>
+        </tbody>
+    </table> -->
+    
