@@ -1,0 +1,20 @@
+﻿@model FilesModel
+@{
+    ViewData["Title"] = "Upload files";
+}
+
+    @if (Model.ErrorMesage != null)
+    {
+          <div class="text-center" style="color:red">
+            @Model.ErrorMesage
+        </div> 
+    }
+    <div class="text-center">
+        tthis is files
+    </div>
+    <hr/>
+
+    <!-- <div class="text-center" style="color:red"">
+            @Model.ErrorMesage
+        </div>   -->
+    

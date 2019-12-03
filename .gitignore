@@ -1,3 +1,7 @@
+!Step8-npm-server/*
+
 node_modules
 **/webserver/bin/debug
 **/webserver/obj
+**/webserver/_files/temp
+

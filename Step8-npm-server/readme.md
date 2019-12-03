@@ -20,6 +20,8 @@
             1. We will not go into details here (short story: https is a secure connection witch requires a valid certicate to run. Our local server only provides a local and temporary certificate witch the chrome browser does not recognize)
             1. Click **Advanced** -> **Proceed to localhost (unsafe)**
     1. Because we are using an asp.net server, the files you are working on in diffrent folders now. They will be described in the steps
+    1. Learn your way with files - homework
+        1. Search in project files (you have a button for that) and change the **Ironman builder** title to **Laurentiu is the best singer in the world!**
     1. Check **Manage parts**
         1. Corresponding file in project is - after you copied to student-work - **Step8-npm-server/student-work/webserver/Views/Robot/Manage.cshtml**
         1. Play with "Detailed view / Simple view"
@@ -27,3 +29,5 @@
         1. Explain why - alghout the class "whiteSpace" is not defined in the file the backgrounc color dissapears
             1. Add the new class "whiteSpace" under the existing "space"
         1. You have noticed a bug - YEEEEEEY, your first discovered bug !!!!! - in cells that have space, upon witching from "Detailed view" to "Simple view" and back. We will not correct this, as life is not always fare ! MUHAHA
+    1. Manage parts - homework
+        1. On hover over components you see color and pointer change. Chnage style so on hover over space tiles they dissapear (it may seem hard but you have all the knoldge to do this), and show a very strange mouse (google it)
