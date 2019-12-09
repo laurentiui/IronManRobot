@@ -31,3 +31,6 @@
         1. You have noticed a bug - YEEEEEEY, your first discovered bug !!!!! - in cells that have space, upon witching from "Detailed view" to "Simple view" and back. We will not correct this, as life is not always fare ! MUHAHA
     1. Manage parts - homework
         1. On hover over components you see color and pointer change. Chnage style so on hover over space tiles they dissapear (it may seem hard but you have all the knoldge to do this), and show a very strange mouse (google it)
+    1. Check **Test upload**
+        1. your upload files are under the folder */webserver/_files*
+        1. check that each upload file has an unique sufiix (so you can upload multiple times the same file)
