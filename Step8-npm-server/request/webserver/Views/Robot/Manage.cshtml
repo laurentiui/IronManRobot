@@ -31,6 +31,9 @@
             background-color: blue;
             color: white;
         }
+        #form-upload{
+            font-size: 12px;
+        }
     </style>
 
     <div id="actions">
@@ -39,37 +42,77 @@
         <input type="radio" name="grid-type" value="real" />&nbsp; Simple view
     </div>
 
-    <div class="container-fluid robot" style="width: 700px;">
-        <div class="row">
-            <div class="col-sm-5 space">space <span>(5 * 1)</span></div>
-            <div class="col-sm-2 component">Head <span>(2*1)</span></div>
-            <div class="col-sm-5 space">space <span>(5 * 1)</<span></div>
+    <div class="row">
+        <div class="col-sm-9">
+             <div class="container-fluid robot" style="width: 700px;">
+                <div class="row">
+                    <div class="col-sm-5 space">space <span>(5 * 1)</span></div>
+                    <div class="col-sm-2 component" onclick="fnSelectPart('head')">Head <span>(2*1)</span></div>
+                    <div class="col-sm-5 space">space <span>(5 * 1)</<span></div>
+                </div>
+                <div class="row">
+                    <div class="col-sm-12 space height-quarter">space <span>(12 * 1)</span></div>
+                </div>
+                <div class="row">
+                    <div class="col-sm-2 component height-2">Left arm <span>(2 * 2)</span></div>
+                    <div class="col-sm-2 space height-4">space <span>(2 * 4)</span></div>
+
+                    <div class="col-sm-4 component height-4">Torso <span>(4 * 4)</span></div>
+
+                    <div class="col-sm-2 space height-4">space <span>(2 * 4)</span></div>
+                    <div class="col-sm-2 component height-2">Right arm <span>(2 * 2)</span></div>
+
+                </div>
+                <div class="row">
+                    <div class="col-sm-12 space height-quarter">space <span>(12 * 1)</span></div>
+                </div>
+                <div class="row">
+                    <div class="col-sm-2 space height-2">space <span>(2 * 2)</span></div>
+                    <div class="col-sm-2 component height-2">Left leg <span>(2 * 2)</span></div>
+
+                    <div class="col-sm-4 space height-2">space <span>(4 * 2)</span></div>
+
+                    <div class="col-sm-2 component height-2">right leg <span>(2 * 2)</span></div>
+                    <div class="col-sm-2 space height-2">space <span>(2 * 2)</span></div>
+
+                </div>
+            </div>
         </div>
-        <div class="row">
-            <div class="col-sm-12 space height-quarter">space <span>(12 * 1)</span></div>
+        <div class="col-sm-3">
+
+            <form method="post" action="Upload" enctype="multipart/form-data" id="form-upload">
+
+                <div class="row">
+                    <div class="col-sm-12">
+                        <select id="sel-type-parts" name="partname" class="form-control" disabled="disabled">
+                            <option value="-1">--SELECT--</option>
+                            <option value="head">Head</option>
+                            <option value="left-arm">Left arm</option>
+                            <option value="torso">Torso</option>
+                            <option value="right-arm">Right arm</option>
+                            <option value="left-leg">Left leg</option>
+                            <option value="right-leg">Right leg</option>
+                        </select>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-sm-12">
+                        <input type="file" id="upload" name="fileToUpload" class="form-control" onchange="fnSubmit();" disabled="disabled"/>
+                    </div>
+                </div>
+                
+            </form>
+
         </div>
+    </div>
+
+   
+
+    <div class="container-fluid robot" style="width: 300px;">
         <div class="row">
-            <div class="col-sm-2 component height-2">Left arm <span>(2 * 2)</span></div>
-            <div class="col-sm-2 space height-4">space <span>(2 * 4)</span></div>
-
-            <div class="col-sm-4 component height-4">Torso <span>(4 * 4)</span></div>
-
-            <div class="col-sm-2 space height-4">space <span>(2 * 4)</span></div>
-            <div class="col-sm-2 component height-2">Right arm <span>(2 * 2)</span></div>
-
-        </div>
-        <div class="row">
-            <div class="col-sm-12 space height-quarter">space <span>(12 * 1)</span></div>
-        </div>
-        <div class="row">
-            <div class="col-sm-2 space height-2">space <span>(2 * 2)</span></div>
-            <div class="col-sm-2 component height-2">Left leg <span>(2 * 2)</span></div>
-
-            <div class="col-sm-4 space height-2">space <span>(4 * 2)</span></div>
-
-            <div class="col-sm-2 component height-2">right leg <span>(2 * 2)</span></div>
-            <div class="col-sm-2 space height-2">space <span>(2 * 2)</span></div>
-
+            <div class="col-sm-12">
+                acilea upload
+            </div>
         </div>
     </div>
 
@@ -111,4 +154,13 @@
             $('.robot div.row div.space').text('space');
         }
     };
+
+    function fnSelectPart(partName){
+        $('#sel-type-parts').val(partName);
+        $('#upload').removeAttr('disabled');
+    }
+
+    function fnSubmit(){
+        $('#form-upload').submit();
+    }
 </script>
